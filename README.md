@@ -1,7 +1,4 @@
-# File-Inclusions
-
-
-# File Inclusion Vulnerabilities: LFI and RFI
+# File Inclusion Vulnerabilities: LFI and RFI RCE with URL encoding
 
 ## Local File Inclusion (LFI)
 
