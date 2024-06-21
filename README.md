@@ -1,7 +1,7 @@
 # File Inclusion Vulnerabilities: LFI and RFI RCE with URL encoding
 
-    # Technical Executive Summary
-        # Understanding File Inclusion Vulnerabilities
+## Technical Executive Summary
+        
 
             Saverity: Medium - Critical 
                 Depends on the content that you can display
