@@ -1,19 +1,19 @@
 # File Inclusion Vulnerabilities: LFI and RFI RCE with URL encoding
 
-# Technical Executive Summary
-# Understanding File Inclusion Vulnerabilities
+    # Technical Executive Summary
+        # Understanding File Inclusion Vulnerabilities
 
-Saverity: Medium - Critical 
-Depends on the content that you can display
+            Saverity: Medium - Critical 
+                Depends on the content that you can display
 
-File Inclusion vulnerabilities, including Local File Inclusion (LFI) and Remote File Inclusion (RFI), are critical security issues that can lead to severe consequences such as unauthorized access, data breaches, and remote code execution. These vulnerabilities arise when a web application allows the inclusion of files without proper validation and sanitization of user inputs.
-Local File Inclusion (LFI)
+    File Inclusion vulnerabilities, including Local File Inclusion (LFI) and Remote File Inclusion (RFI), are critical security issues that can lead to severe consequences such as unauthorized access, data breaches,     and remote code execution. These vulnerabilities arise when a web application allows the inclusion of files without proper validation and sanitization of user inputs.
+    Local File Inclusion (LFI)
 
-LFI occurs when a web application includes files from the local server's filesystem. This can be exploited to read sensitive files, execute code, and gain unauthorized access to the system. One common technique to exploit LFI is through Log Poisoning, where malicious code is injected into log files that are later included by the web application.
-Remote File Inclusion (RFI)
+    LFI occurs when a web application includes files from the local server's filesystem. This can be exploited to read sensitive files, execute code, and gain unauthorized access to the system. One common technique         to exploit LFI is through Log Poisoning, where malicious code is injected into log files that are later included by the web application.
+    Remote File Inclusion (RFI)
 
-RFI is a more dangerous variant that allows the inclusion of files from remote servers. This can lead to remote code execution by including and executing malicious scripts hosted externally. Exploiting RFI typically involves hosting a malicious file and crafting a URL to include it in the vulnerable web application.
-Exploitation Techniques
+    RFI is a more dangerous variant that allows the inclusion of files from remote servers. This can lead to remote code execution by including and executing malicious scripts hosted externally. Exploiting RFI            typically involves hosting a malicious file and crafting a URL to include it in the vulnerable web application.
+    Exploitation Techniques
 
     Identifying Vulnerabilities: Penetration testers use various techniques and tools to identify LFI and RFI vulnerabilities, such as fuzzing and analyzing HTTP responses.
     Log Poisoning: For LFI, testers inject malicious payloads into log files or other writable files on the server to execute code.
